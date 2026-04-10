@@ -2,29 +2,60 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Minha primeira página</title>
+    <title>Agendamento Barbearia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+             <!-- conectar border com css -->
+
 </head>
 <body>
 
-    <h1>Sistema de agendamento!</h1>
+    <h1>Barbearia Estilo</h1>
 
-    <p>
-        Este é um parágrafo de exemplo para praticar HTML básico.
-    </p>
+    <h2>Agendar Horário</h2>
 
-    <h2>Lista de estudos</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
+    <form>
+        <label>Nome:</label><br>
+        <input type="text" name="nome" required><br><br>
 
-    <a href="#">Este é um link</a>
+        <label>Telefone:</label><br>
+        <input type="tel" name="telefone" required><br><br>
 
-    <br><br>
+        <label>Serviço:</label><br>
+        <select name="servico">
+            <option>Corte de Cabelo</option>
+            <option>Barba</option>
+            <option>Corte + Barba</option>
+        </select><br><br>
 
-    <button>Clique aqui</button>
+        <label>Data:</label><br>
+        <input type="date" name="data" required><br><br>
+
+        <label>Horário:</label><br>
+        <input type="time" name="hora" required><br><br>
+
+        <button type="submit">Agendar</button>
+    </form>
+
+    <hr>
+
+    <h2>Agendamentos</h2>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Serviço</th>
+            <th>Data</th>
+            <th>Hora</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>Corte</td>
+            <td>10/04</td>
+            <td>14:00</td>
+        </tr>
+    </table>
 
 </body>
 </html>
-``
